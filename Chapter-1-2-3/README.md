@@ -111,19 +111,19 @@ There's a high demand for Python developers in world wide but the supply is real
 
 `Step 1):`
 To download and install Python, visit the official website of python https://www.python.org/downloads/ and choose your version. We have chosen Python version 3.10.0
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/3f5747de-ac28-4a0c-b319-68d2393def73)
 
 `Step 2):`
 Once the download is completed, run the .exe file to install Python. Now click on Install Now.
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/fb315fa8-6ddb-4050-9337-2cf262703760)
 
 `Step 3):`
 You can see Python installing at this point.
-![image-3.png](attachment:image-3.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/e01a0cae-c871-4bbb-a452-d28d77ac93bd)
 
 `Step 4):`
 When it finishes, you can see a screen that says the Setup was successful. Now click on “Close”.
-![image-4.png](attachment:image-4.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8b8b57c6-4084-4307-9ea3-948f26e343c5)
 
 ***************************************
 
@@ -134,35 +134,35 @@ Here is a step by step process on how to download and install Pycharm IDE on Win
 `Step 1):`
 To download PyCharm visit the website https://www.jetbrains.com/pycharm/download/ and Click the
 “DOWNLOAD” link under the Community Section.
-![image-5.png](attachment:image-5.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/90843a06-5df2-412e-86be-11d5971d2aa3)
 
 `Step 2):`
 Once the download is complete, run the exe for install PyCharm. The setup wizard should have started.Click “Next”.
-![image-6.png](attachment:image-6.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/44a5ddce-e110-4e50-9e2e-27de09309342)
 
 `Step 3):`
 On the next screen, Change the installation path if required. Click “Next”.
-![image-7.png](attachment:image-7.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/d8d8fd45-59c8-48b5-b271-f2d040cf49fb)
 
 `Step 4):`
 On the next screen, you can create a desktop shortcut if you want and click on “Next”.
-![image-8.png](attachment:image-8.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/355289e1-341d-4133-b440-6a2d0659e7b3)
 
 `Step 5):`
 Choose the start menu folder. Keep selected JetBrains and click on “Install”.
-![image-9.png](attachment:image-9.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/55d6fc6a-ec98-4ed8-912c-2d30a09de76e)
 
 `Step 6):`
 Wait for the installation to finish.
-![image-10.png](attachment:image-10.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/0a76a2bc-c40d-4b93-9170-90a1084e6e28)
 
 `Step 7):`
 Once installation finished, you should receive a message screen that PyCharm is installed. If you want to go ahead and run it, click the “Run PyCharm Community Edition” box first and click “Finish”.
-![image-11.png](attachment:image-11.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/2b5f6940-2cae-42fb-91e1-d2f50ab360b7)
 
 `Step 8):`
 After you click on “Finish,” the Following screen will appear.
-![image-12.png](attachment:image-12.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/37b9d04b-09cf-4672-b151-416a4d66ee8a)
 
 ***************************************
 
@@ -170,73 +170,73 @@ After you click on “Finish,” the Following screen will appear.
 
 Anaconda Download & Installation Steps Please open this link: https://www.anaconda.com/products/individual Or https://www.anaconda.com/products/individual#Downloads
 
-![image-13.png](attachment:image-13.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/23f6ba06-4a07-4420-9e41-c93ac51c254e)
 Click ‘Download’
 
 After Downloading Open Setup
-![image-17.png](attachment:image-17.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/dc61f6aa-f66d-48d2-a897-73546fd8e179)
 
 Click ‘I Agree’
-![image-18.png](attachment:image-18.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/76fdd8b0-9441-4836-9b73-cfe5428b2d53)
 
 Select ‘Just Me’ and Click ‘Next’
-![image-19.png](attachment:image-19.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/a9005898-6658-4ac8-a7b7-f42cf0b72d76)
 
 Click ‘Next’
-![image-20.png](attachment:image-20.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/7648a920-5542-41d5-872d-75d943d050da)
 
 Click ‘Install’
-![image-21.png](attachment:image-21.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/987090b1-a60f-4100-b5e3-66b7590cfb2a)
 
 Installation is in Progress (Might take time)
-![image-22.png](attachment:image-22.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/d14bfa19-8ad2-440d-a80a-c8ad3b925200)
 
 Click ‘Next’
-![image-23.png](attachment:image-23.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/65f75da3-bd89-44a4-be0d-1257e8ae03c2)
 
 Click ‘Next’
-![image-24.png](attachment:image-24.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/49628abc-b107-4bfb-ba7b-5b503a3e49a0)
 
 Click ‘Finish’
-![image-25.png](attachment:image-25.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/483dfbdc-8571-4c9c-ab13-347ba037872f)
 
 Click "window" button and search for ‘Jupyter Notebook (Anaconda 3)’ and click ‘Open’
-![image-26.png](attachment:image-26.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/d76a0fbf-71c4-462f-adcd-673b6a0b5195)
 
 It will open a prompt like below and launch the default web browser
-![image-27.png](attachment:image-27.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/929216e1-2433-47ec-bed8-6209fca9051c)
 
 It will open in the default web browser like below:
-![image-28.png](attachment:image-28.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/3be0d5e8-a233-414c-9cc5-6f4831edbc50)
 
 goto "Desktop" 
-![image-32.png](attachment:image-32.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/7cb326d9-b99b-44f9-8ebd-019502accec2)
 
 click there & create folder 
-![image-43.png](attachment:image-43.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/e551f08e-ea18-4531-b4a2-cf683a81f3f2)
 
 You can see untitle project just select and rename it
-![image-34.png](attachment:image-34.png)
-![image-35.png](attachment:image-35.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8c343eeb-c8d3-47f6-8723-bab569366037)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6d49dc25-e4ad-4be3-9205-35ee2a9cda61)
+
 
 Here you can see the directory of your computer which you rename it, goto folders.
-![image-36.png](attachment:image-36.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4bedcff7-8bb3-4af3-b8a3-a061d6debfda)
 
 Interface of jupyter python file
-![image-38.png](attachment:image-38.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/a1cfb5e9-04eb-4d00-9c98-a5969013a52d)
 
 The Jupyter Notebook Toolbar
-![image-37.png](attachment:image-37.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/11beb8ed-ec2f-40b0-849c-89659e135ffb)
 
 File: It will show list of options like ‘Save’ , ‘Save as’, ‘New’, ‘Make a copy’, ‘Download as’ etc.
 Download as option will show options to download the current notebook as HTML version by default. For other options, you can look up to Jupyter Notebook documentation
 Edit: It will show ‘Cut’, ‘Copy’ ,’Paste’, ‘Delete’, ‘Move Up’, ‘Move Down’ etc. for Cells.
 Cells here refer to the fields where the code is written.
-![image-39.png](attachment:image-39.png)
-![image-40.png](attachment:image-40.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/cb617165-c698-4def-ae1b-2f930ded6fbe)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ba5c2f63-9482-47c8-9b53-b3ecf8f79e48)
 Cell: It will show ‘Run Cell’, ‘Run All’, etc. options.
 Kernel: When your notebook hangs or is in an endless loop (while loop)- you can click on Kernel and ‘Interrupt’, ‘Restart’ the Python Kernel.
-![image-41.png](attachment:image-41.png)
-
-![image-42.png](attachment:image-42.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/bcc2e355-0909-453b-a8c5-353ac7beb8f7)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/55b3da86-88b1-443c-8d0d-a16a86d3be75)
 
