@@ -98,3 +98,145 @@ There are many features in Python, some of which are discussed below as follows:
 ## `7. Implementations of Python & its career opportunities`
 
 There's a high demand for Python developers in world wide but the supply is really, really low. This is what makes it a great opportunity for Pakistanis to get skilled in python. One of Pakistan's software companies faced a dilemma after winning a $200 million (Rs. 1200 crore) contract with a large US bank. Instead, they hired a group of freelance Python programmers in the US instead.
+
+<br>
+
+# <span style='color:green, font-family; times, serif; font-size:30pt; font-style:italic'>Chapter No 3 Downloading & Installation</span>
+
+1. Download Python IDLE & Installation Python IDE
+2. Download PyCharm IDE & Installation PyCharm IDE
+3. Download Annaconda Navigator & also Installation 
+
+## `1. Download Python IDLE & Installation Python IDE:`
+
+`Step 1):`
+To download and install Python, visit the official website of python https://www.python.org/downloads/ and choose your version. We have chosen Python version 3.10.0
+![image.png](attachment:image.png)
+
+`Step 2):`
+Once the download is completed, run the .exe file to install Python. Now click on Install Now.
+![image-2.png](attachment:image-2.png)
+
+`Step 3):`
+You can see Python installing at this point.
+![image-3.png](attachment:image-3.png)
+
+`Step 4):`
+When it finishes, you can see a screen that says the Setup was successful. Now click on “Close”.
+![image-4.png](attachment:image-4.png)
+
+***************************************
+
+
+## `2. Download PyCharm IDE & Installation PyCharm IDE`
+
+Here is a step by step process on how to download and install Pycharm IDE on Windows:
+`Step 1):`
+To download PyCharm visit the website https://www.jetbrains.com/pycharm/download/ and Click the
+“DOWNLOAD” link under the Community Section.
+![image-5.png](attachment:image-5.png)
+
+`Step 2):`
+Once the download is complete, run the exe for install PyCharm. The setup wizard should have started.Click “Next”.
+![image-6.png](attachment:image-6.png)
+
+`Step 3):`
+On the next screen, Change the installation path if required. Click “Next”.
+![image-7.png](attachment:image-7.png)
+
+`Step 4):`
+On the next screen, you can create a desktop shortcut if you want and click on “Next”.
+![image-8.png](attachment:image-8.png)
+
+`Step 5):`
+Choose the start menu folder. Keep selected JetBrains and click on “Install”.
+![image-9.png](attachment:image-9.png)
+
+`Step 6):`
+Wait for the installation to finish.
+![image-10.png](attachment:image-10.png)
+
+`Step 7):`
+Once installation finished, you should receive a message screen that PyCharm is installed. If you want to go ahead and run it, click the “Run PyCharm Community Edition” box first and click “Finish”.
+![image-11.png](attachment:image-11.png)
+
+`Step 8):`
+After you click on “Finish,” the Following screen will appear.
+![image-12.png](attachment:image-12.png)
+
+***************************************
+
+## `3. Download Annaconda Navigator & also Installation `
+
+Anaconda Download & Installation Steps Please open this link: https://www.anaconda.com/products/individual Or https://www.anaconda.com/products/individual#Downloads
+
+![image-13.png](attachment:image-13.png)
+Click ‘Download’
+
+After Downloading Open Setup
+![image-17.png](attachment:image-17.png)
+
+Click ‘I Agree’
+![image-18.png](attachment:image-18.png)
+
+Select ‘Just Me’ and Click ‘Next’
+![image-19.png](attachment:image-19.png)
+
+Click ‘Next’
+![image-20.png](attachment:image-20.png)
+
+Click ‘Install’
+![image-21.png](attachment:image-21.png)
+
+Installation is in Progress (Might take time)
+![image-22.png](attachment:image-22.png)
+
+Click ‘Next’
+![image-23.png](attachment:image-23.png)
+
+Click ‘Next’
+![image-24.png](attachment:image-24.png)
+
+Click ‘Finish’
+![image-25.png](attachment:image-25.png)
+
+Click "window" button and search for ‘Jupyter Notebook (Anaconda 3)’ and click ‘Open’
+![image-26.png](attachment:image-26.png)
+
+It will open a prompt like below and launch the default web browser
+![image-27.png](attachment:image-27.png)
+
+It will open in the default web browser like below:
+![image-28.png](attachment:image-28.png)
+
+goto "Desktop" 
+![image-32.png](attachment:image-32.png)
+
+click there & create folder 
+![image-43.png](attachment:image-43.png)
+
+You can see untitle project just select and rename it
+![image-34.png](attachment:image-34.png)
+![image-35.png](attachment:image-35.png)
+
+Here you can see the directory of your computer which you rename it, goto folders.
+![image-36.png](attachment:image-36.png)
+
+Interface of jupyter python file
+![image-38.png](attachment:image-38.png)
+
+The Jupyter Notebook Toolbar
+![image-37.png](attachment:image-37.png)
+
+File: It will show list of options like ‘Save’ , ‘Save as’, ‘New’, ‘Make a copy’, ‘Download as’ etc.
+Download as option will show options to download the current notebook as HTML version by default. For other options, you can look up to Jupyter Notebook documentation
+Edit: It will show ‘Cut’, ‘Copy’ ,’Paste’, ‘Delete’, ‘Move Up’, ‘Move Down’ etc. for Cells.
+Cells here refer to the fields where the code is written.
+![image-39.png](attachment:image-39.png)
+![image-40.png](attachment:image-40.png)
+Cell: It will show ‘Run Cell’, ‘Run All’, etc. options.
+Kernel: When your notebook hangs or is in an endless loop (while loop)- you can click on Kernel and ‘Interrupt’, ‘Restart’ the Python Kernel.
+![image-41.png](attachment:image-41.png)
+
+![image-42.png](attachment:image-42.png)
+
