@@ -131,7 +131,7 @@ print(complexx)
 # <li style="font-size:20pt">Legal Or Ill Legal Variable</li>
 A variable name must start with a letter or the underscore character. A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _). Variable names are case-sensitive (age, Age and AGE are three different variables).
 
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/1f01df78-7d45-4aeb-8c59-46d563f8d811)
 
 `1. Variable name should start with letter(a-zA-Z) or underscore (_).`
 
@@ -303,10 +303,10 @@ print(type(abc))
     <class 'set'>
     
 
+# Operators
 # <li style="font-size:20pt">Arithmetic Operators</li>
 
-![image.png](attachment:image.png)
-
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/7e8d0f16-24b6-4e77-bfe0-32eeacf19de7)
 
 ```python
 x = 4
@@ -386,8 +386,7 @@ print(z)
 
 # <li style="font-size:20pt">Assignment Operators</li>
 
-![image-5.png](attachment:image-5.png)
-
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c471ccc3-1cf4-47e4-80d1-b280ad837c30)
 
 ```python
 x = 5
@@ -501,7 +500,7 @@ print(x)
     
 
 # <li style="font-size:20pt">Comparison Operators</li>
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ffeb7063-ead9-497b-874c-9ee61a22056d)
 
 
 ```python
@@ -625,7 +624,7 @@ print(z)
     
 
 # <li style="font-size:20pt">Logical Operators</li>
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/79b4c314-c342-4d14-91b3-69ba29044a41)
 
 
 ```python
@@ -754,7 +753,7 @@ print("Ouput Of not operator: ",not c) # using "not" operator
     
 
 # <li style="font-size:20pt">Identity Operators</li>
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/d625b99a-1165-4290-9532-e9cdf7b2ce79)
 
 
 ```python
@@ -799,7 +798,7 @@ print(x is not z)
     
 
 # <li style="font-size:20pt">Membership Operators</li>
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/09659e94-5a4c-474a-b9e6-77dcd109a930)
 
 
 ```python
@@ -872,8 +871,8 @@ print("Hello" not in x)
     
 
 # <li style="font-size:20pt">Bitwise Operators</li>
-![image.png](attachment:image.png)
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/0e708545-ebb9-4f9d-87d9-2f3cd27cd508)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b63489c2-12d0-48d4-9ce1-75c33c85faec)
 
 
 # <li style="font-size:20pt">Python Numbers (Integers, Floating-Point Numbers, And Complex Numbers)</li>
