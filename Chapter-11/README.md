@@ -1667,8 +1667,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/5406e8c1-a4fc-4b47-8c1b-171917a528f1)
 
-![image-2.png](attachment:image-2.png)
 
 
 ```python
@@ -1691,8 +1691,8 @@ myButton.pack()
 root.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/35b025fd-250d-43ae-bebc-51522f98dc30)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1756,8 +1756,8 @@ sub_btn.grid(row=2,column=1)
 gui.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/2bb4f9ae-5fb3-4de4-9ece-68d05279e2f2)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>CheckButton In Tkinter</li>
 
@@ -1766,8 +1766,8 @@ gui.mainloop()
 <p>ck_btn = Checkbutton(parent, **kwargs)</p>
 <h3>Methods:</h3>
 <p>The methods that can be called with the Checkbuttons are described in the following table.</p>
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/af55299f-4b8c-42dd-a983-8eb683d0e63b)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -1780,8 +1780,8 @@ ck1_btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/29ac7e36-08b5-48fa-b3ba-3a88e4f7616e)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1799,8 +1799,8 @@ ck2_btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6c0226b7-13e8-4e8d-bb2e-2b718b2d580f)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1830,8 +1830,8 @@ ck5_btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/af0daa48-e608-4281-add5-6a552901908d)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1859,8 +1859,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b0072c42-3c71-4cb1-9a12-3f0d2c4e0c43)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1889,8 +1889,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/7986f4d0-2903-42e5-aa96-ffbf133cb44a)
 
-![image.png](attachment:image.png) 
 
 
 ```python
@@ -1927,8 +1927,8 @@ btn = Button(gui,text="Check",command=click_me)
 btn.pack()
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/10d3fe57-3208-44bb-b6ff-f75d1a72e9cf)
 
-![image-2.png](attachment:image-2.png)
 
 # <li style='font-size:20pt'>RadioButton In Tkinter</li>
 <p style="text-align: justify;">The Radiobutton widget is used to implement one-of-many selection in the python application. It shows multiple choices to the user, and the user can select only one of them. We can associate different methods with each of the radio buttons. We can display the multiple-line text or images on the radio buttons. The radio button is associated with a single variable to keep track of the user's selection. Each button displays a single value for that particular variable. The syntax to use the Radiobutton is given below.</p>
@@ -1946,8 +1946,8 @@ rbtn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/f3307eff-941a-4468-8694-d3df8da67866)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1967,8 +1967,8 @@ rbtn2.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/2e00aad0-4460-450a-9659-816d768a3bdd)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -2002,7 +2002,8 @@ label.pack()
 top.mainloop()  
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/46c9d32c-bf57-47ac-98c5-d042a7d2b3de)
+
 
 
 ```python
@@ -2028,8 +2029,8 @@ for (text, value) in values.items():
 mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/2ffa3977-7d60-41c5-91ef-1d615ed11f99)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>Frame In Tkinter</li>
 <p style="text-align: justify;">Python Tkinter Frame widget is used to organize the group of widgets. It acts like a container that can be used to hold the other widgets. The rectangular areas of the screen are used to organize the widgets for the python application.</p>
@@ -2060,8 +2061,8 @@ redbutton.pack( side = LEFT)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/1811c62b-cc05-4713-bc10-c496eb90d821)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -2081,8 +2082,8 @@ imgLabel.pack(side=RIGHT)
 
 mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ddd8f659-9a28-4f8d-bcdd-58f5101d036e)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -2093,8 +2094,8 @@ for fm in ['blue','red','yellow','green','white','black']:
     Frame(height = 20,width = 640,bg = fm).pack()  
 root.mainloop() 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6dc7d79e-83ac-43e8-9afc-84b90243b003)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -2123,8 +2124,8 @@ lb3.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b5360988-289d-49ea-abee-a49770581304)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>ListBox In Tkinter</li>
 
@@ -2182,14 +2183,11 @@ top.mainloop()
 ```
 
 
-```python
+```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8596dece-b480-4e6f-aba1-785df6cc7dc9)
 
 ```
 
-
-```python
-
-```
 
 # <li style='font-size:20pt'>TextBox In Tkinter</li>
 
@@ -2257,8 +2255,8 @@ Lb1.insert(6, "Ruby")
 Lb1.pack()
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b12a5b28-8e1e-4611-8be3-c6962bcfc57e)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -2285,8 +2283,8 @@ lbl.pack()
 listbox.pack()  
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c5332dfe-92c8-47d6-855b-2ebf060c06c1)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -2317,8 +2315,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/47a4a6ef-9b00-4f38-97ae-15f821900034)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>ScrollBar In Tkinter</li>
 <p>Tkinter is a built-in standard python library. There are various types of widgets available in Tkinter such as button, frame, label, menu, scrolledtext, canvas and many more. ScrolledText widget is a text widget with a scroll bar. The scrollbar widget is used to scroll down the content. We can also create horizontal scrollbars for the Entry widget.</p>
@@ -2373,8 +2371,8 @@ sb.config( command = mylist.yview )
   
 gui.mainloop() 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8805589e-7e67-4638-8178-6987f64ad2a6)
 
-![image-2.png](attachment:image-2.png)
 
 
 ```python
@@ -2403,8 +2401,8 @@ scroll_bar.config(command = mylist.yview )
 gui.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/de6b2af1-7f75-4f4a-bcf4-6a60416f852f)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -2424,8 +2422,6 @@ text['yscrollcommand'] = scrollbar.set
 
 gui.mainloop()
 ```
-
-![image-2.png](attachment:image-2.png)
 
 # <li style='font-size:20pt'>LabelFrame In Tkinter</li>
 <p>Labelframe is a simple container widget. Its primary purpose is to act as a spacer or container for complex window layouts. It acts like a container that can be used to group the number of interrelated widgets such as Radiobuttons. This widget is a variant of the Frame widget which has all the features of a frame plus the ability to display a label.</p>
