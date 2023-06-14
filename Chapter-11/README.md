@@ -194,7 +194,8 @@ gui.mainloop()
 ```
 
 Output;
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/680fd5c4-8e34-403f-b1f9-df08eb09d2c5)
+
 
 
 ```python
@@ -210,7 +211,8 @@ gui.attributes("-fullscreen",False) # it will show normal screen
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/5de62296-0b02-4888-86f2-4017b7770599)
+
 
 
 ```python
@@ -226,8 +228,8 @@ gui.attributes('-alpha',0.6) # if define opacity/Transparancy of screen
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/1666d466-451e-4b84-98c0-996b274d6fa6)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -241,7 +243,8 @@ gui.attributes("-fullscreen",True,'-alpha',0.8) # show fullscreen opacity
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/2c64cae2-4142-433a-8a49-76ad048e1bd5)
+
 
 # Minsize | Maxsize | Resizable
 
@@ -263,7 +266,8 @@ gui.resizable(0,0)
 gui.mainloop()
 ```
 
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4c2c58d5-5794-4a2a-8096-aa6601b65f81)
+
 
 
 ```python
@@ -277,7 +281,8 @@ gui.resizable(True,True)
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b26e4634-0e5a-44b8-a962-348c1087957b)
+
 
 
 ```python
@@ -290,8 +295,8 @@ gui.resizable(True,0) # only for one side
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4e3bbdd7-563d-4a62-8d05-79ec60018289)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>Label In Tkinter</li>
 The Label is used to specify the container box where we can place text or images. There are various options which can be specified to configure the text or part of the text shown in the Label. The syntax to use the Label is given below. It provides the information to the user about other widgets used in the application.
@@ -309,8 +314,8 @@ btn = Label(gui,text="First Python Button")
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/7fd4965b-05c1-4f04-b4e9-e25792fa171b)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -324,8 +329,8 @@ lb.pack() # .pack() helps us to view button in GUI window
 root.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/bfcd46d9-5e89-4b52-91c9-140a9d478b02)
 
-![image-2.png](attachment:image-2.png)
 
 
 <h2><strong>Geometry:</strong></h2>
@@ -357,7 +362,8 @@ gui.mainloop()
 
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ca686297-f94c-4165-9f47-bb0c79bbd10a)
+
 
 
 ```python
@@ -372,8 +378,8 @@ lb.pack(side=BOTTOM) # .pack() helps us to view button in GUI window
 gui.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/be35cfeb-752d-495b-a5b3-c764c048d354)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -391,8 +397,8 @@ lb.pack(side=LEFT)  # It will show left side
 gui.mainloop()
 
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/3dcbb0a8-9d29-44b4-8a1c-86106c70525c)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -418,7 +424,8 @@ lb4.pack(side=BOTTOM)  # It will show bottom side
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/63a136db-b3d9-4595-b349-174b3a548f28)
+
 
 
 ```python
@@ -435,7 +442,8 @@ lb1.pack(side=BOTTOM, pady=50) # pady will be downward
 gui.mainloop()
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/854b318a-0edc-40cc-88ed-b05ad228b6e8)
+
 
 
 ```python
@@ -452,7 +460,8 @@ button1.pack(padx=100, pady=160) # pady will be downward, forward
 gui.mainloop()
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/60c4a347-cec6-40b7-9bc0-36098eac48be)
+
 
 
 ```python
@@ -473,7 +482,8 @@ lb2.pack(fill = BOTH, expand = True)
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c5560efb-97eb-4699-a114-5380ef9aac74)
+
 
 <h2>2.) place():</h2>
 <p>The place() geometry manager organizes the widgets to the specific x and y coordinates.</p>
@@ -497,7 +507,8 @@ lb.place(x=0 , y=0) # x,y take coordinnate for position of button
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/b9119763-5ff1-4415-b6ec-cd07fb759443)
+
 
 
 ```python
@@ -515,12 +526,14 @@ lb.place(x=100,y=200)# x,y take coordinnate for position of button
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8d732d9f-16e9-4033-9bd9-b176fa6bd974)
+
 
 <h2 style="text-align: justify;">Grid():</h2>
 <p style="text-align: justify;">The Grid geometry manager puts the widgets in a 2-dimensional table. The master widget is split into a number of rows and columns, and each "cell" in the resulting table can hold a widget. The grid manager is the most flexible of the geometry managers in Tkinter. If you don't want to learn how and when to use all three managers, you should at least make sure to learn this one. Consider the following <br />example:</p>
 
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/653b639b-559d-464e-987b-554afe9a3c5c)
+
 
 
 ```python
@@ -537,7 +550,8 @@ lb.grid(row=0,column=0)
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8bc6e31d-fa21-4d9c-84f7-1e9d1a61c639)
+
 
 
 ```python
@@ -573,7 +587,8 @@ lb6.grid(row=1,column=2)
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c140203b-b2c9-4b2d-9511-066cf598c0db)
+
 
 
 ```python
@@ -593,7 +608,8 @@ lb.grid(row=1,column=0, sticky = N, padx = 0, pady=0)
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4231c5c5-2f93-4317-b40c-aed231266d33)
+
 
 # Label Propertise 
 
@@ -622,7 +638,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/79e8483d-8b74-4288-8ad0-1cadf3653f59)
+
 
 
 ```python
@@ -639,7 +656,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/53ecea38-b7ae-4192-b0ce-85c8bc63e606)
+
 
 
 ```python
@@ -657,7 +675,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/57352d8e-9896-4e2d-b426-d7c6349750f3)
+
 
 
 ```python
@@ -675,7 +694,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6d60e2e1-7e50-4d27-8afe-2b70596d08eb)
+
 
 
 ```python
@@ -693,7 +713,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c128bc40-9731-48f4-8812-58426099ad58)
+
 
 
 ```python
@@ -711,7 +732,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/5c3d63c9-288a-4def-a96f-d4aaeb226d5b)
+
 
 
 ```python
@@ -729,7 +751,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/00881950-678f-473e-9eb5-07ec10c43c15)
+
 
 
 ```python
@@ -747,7 +770,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/bc03186a-aa91-41f5-8f63-35c3619ac5b2)
+
 
 
 ```python
@@ -765,7 +789,8 @@ for i in range(5):
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/92cd97e5-2636-42e3-a54c-9f93468e288b)
+
 
 
 ```python
@@ -783,7 +808,8 @@ for i in range(5):
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/3521ed95-d11e-487c-954c-b993149f7bfd)
+
 
 
 ```python
@@ -810,7 +836,8 @@ lab1.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c6f52af5-b53f-419d-830a-aef809f71de8)
+
 
 
 ```python
@@ -827,8 +854,8 @@ lab1.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/45eadb62-bcf7-4a84-a5cb-2f7c4f0ac78d)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>Button In Tkinter</li>
 
@@ -865,7 +892,8 @@ root.mainloop()
 ```
 
 Output;
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/caf9228b-fa91-41f0-bd83-23acb343e605)
+
 
 
 <h2><strong>Geometry:</strong></h2>
@@ -899,7 +927,8 @@ gui.mainloop()
 ```
 
 Output:
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8b7b358b-57a1-405f-8fb9-80faaec4292c)
+
 
 
 ```python
@@ -920,7 +949,8 @@ gui.mainloop()
 ```
 
 Output:
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4fc49989-f823-4698-b246-ac4d4c97f9dc)
+
 
 
 ```python
@@ -947,9 +977,8 @@ gui.mainloop()
 ```
 
 Output:
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/999fb35a-a2a2-4c1d-aebe-ebc8769ab446)
 
-
-![image.png](attachment:image.png) 
 
 
 ```python
@@ -968,7 +997,8 @@ gui.mainloop()
 
 output:
 
-![image.png](attachment:image.png) 
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/332328c9-a273-4895-8161-bc9a26fa4eb9)
+
 
 
 ```python
@@ -987,7 +1017,8 @@ gui.mainloop()
 ```
 
 output:
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/4db5f57d-0006-4406-8f7b-c3322db72332)
+
 
 
 ```python
@@ -1005,7 +1036,8 @@ gui.mainloop()
 ```
 
 output:
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/73414b57-445f-49b8-b11a-4028578674d9)
+
 
 
 ```python
@@ -1021,8 +1053,8 @@ button1.pack(ipadx=80) # ipadx will be increase button width forwardly
 
 gui.mainloop()
 ```
++![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/a39baceb-bb71-48a6-a6de-4749c2027af7)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -1039,7 +1071,8 @@ button1.pack(ipady=80) # pady will be downwardly
 gui.mainloop()
 ```
 
-![image.png](attachment:image.png) 
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ec5ce4ec-49a0-44c9-bf93-c384008d5d30)
+
 
 
 ```python
@@ -1056,7 +1089,7 @@ button1.pack(ipadx=80,ipady =80) # pady will be downward
 gui.mainloop()
 ```
 
-![image.png](attachment:image.png) 
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/32c8646a-5bb5-4381-abdb-a200f6fc397f)
 
 
 ```python
@@ -1076,8 +1109,8 @@ b2.pack(fill = BOTH, expand = True)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8b29a963-6b7a-437a-a84f-a08ed1cbd9f2)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1097,8 +1130,8 @@ b2.pack(side = TOP, expand = True, fill = BOTH)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ec8d6465-fe7e-4d1e-9e95-644e7fbaed9e)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1122,8 +1155,8 @@ b3.pack(side = LEFT, expand = True, fill = BOTH)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6001fe82-e28b-4fa2-b395-55a222233517)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1139,8 +1172,8 @@ b1.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/53d6b37d-39f7-47e7-9494-8f432614624f)
 
-# ![image.png](attachment:image.png)
 
 <h2>2.) place():</h2>
 <p>The place() geometry manager organizes the widgets to the specific x and y coordinates.</p>
@@ -1163,8 +1196,8 @@ btn.place(x=0 , y=0) # x,y take coordinnate for position of button
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c34509ad-16f1-4588-bd40-96d7c127b675)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -1182,8 +1215,8 @@ btn.place(x=20 , y=0) # x,y take coordinnate for position of button
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8c282a46-bdcc-4c6e-901a-d59aadfc75e2)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -1200,8 +1233,8 @@ btn.place(x=0 , y=20) # x,y take coordinnate for position of button
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/d9823fbd-f563-48a4-94b0-0bd90b904f38)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1219,13 +1252,14 @@ btn0.place(x =2, y = 2)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c931c8a5-bd25-4cf8-a32b-9b54eddaeffb)
 
-# ![image.png](attachment:image.png)
 
 <h2 style="text-align: justify;">Grid():</h2>
 <p style="text-align: justify;">The Grid geometry manager puts the widgets in a 2-dimensional table. The master widget is split into a number of rows and columns, and each "cell" in the resulting table can hold a widget. The grid manager is the most flexible of the geometry managers in Tkinter. If you don't want to learn how and when to use all three managers, you should at least make sure to learn this one. Consider the following <br />example:</p>
 
-![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/399b3eed-d8c6-405c-b877-1376769e33cf)
+
 
 
 ```python
@@ -1241,8 +1275,8 @@ btn.grid(row=0,column=0)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c749888b-371e-4939-a3bd-31d00ade786d)
 
-![image.png](attachment:image.png)
 
 
 ```python
@@ -1277,8 +1311,8 @@ btn6.grid(row=1,column=2)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c173ba83-9f99-4dd6-b08e-c94d775c3687)
 
-![image.png](attachment:image.png) 
 
 
 ```python
@@ -1297,8 +1331,8 @@ btn2.grid(row=1,column=0, sticky = N, padx = 0, pady=0)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/fe9088f7-715e-43eb-9a3a-c33c25062e8a)
 
-![image-2.png](attachment:image-2.png)
 
 # Button Propertise
 
@@ -1320,8 +1354,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/152e3635-4cb4-4f77-8c4d-57019c52b902)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1339,8 +1373,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/c487aa98-1cf0-49d6-b7e3-8c34904ede1c)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1359,8 +1393,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/e4a0a559-de8b-45b0-8704-ac848bdf405d)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1379,8 +1413,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6c470c6a-5d3f-4473-9846-bc1c73ce17ad)
 
-![image-2.png](attachment:image-2.png)
 
 
 ```python
@@ -1399,8 +1433,9 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/8811dc81-16a6-46fc-a3b5-e952178cff13)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/da1628b5-b1bc-48c7-8141-db9a84e5f57f)
 
-# ![image.png](attachment:image.png) ![image-2.png](attachment:image-2.png)
 
 
 ```python
@@ -1419,8 +1454,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/f174ac61-4fcd-4b73-b1af-e18c1876f538)
 
-# ![image.png](attachment:image.png) 
 
 
 ```python
@@ -1448,8 +1483,8 @@ btn3.pack(side=LEFT)
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/ea8432ec-a15f-458e-8777-945ac80b29ff)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1466,8 +1501,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/07d90752-9abc-4e8e-8978-c5c21f39913f)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1493,7 +1528,8 @@ btn2.pack()
 gui.mainloop()
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/479cfcf7-0c7f-44c9-af0f-9961d1f6ee7c)
+
 
 
 ```python
@@ -1512,8 +1548,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/6afe7e3c-acae-4fda-83f2-ef1a4bcf68eb)
 
-# ![image.png](attachment:image.png)
 
 # <li style='font-size:20pt'>Entry in Tkinter</li>
 
@@ -1541,7 +1577,8 @@ ent.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/f0fdaa9c-11cb-4f4a-9015-6ef44d778f7d)
+
 
 
 ```python
@@ -1557,8 +1594,8 @@ ent.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/0d5c36d0-e77b-4bb0-86a6-3c21becece69)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1577,8 +1614,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/73245a91-bb0c-427a-9361-c5c2d8c253d1)
 
-# ![image.png](attachment:image.png)
 
 
 ```python
@@ -1603,8 +1640,8 @@ btn.pack()
 
 gui.mainloop()
 ```
+![image](https://github.com/MuhammadRaheelNaseem/Learn-Python-By-Sir-Raheel/assets/63813881/0715560c-0199-4042-9bc8-77ee89f7ed3d)
 
-![image-2.png](attachment:image-2.png)
 
 
 ```python
