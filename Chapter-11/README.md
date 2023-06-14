@@ -2422,6 +2422,7 @@ text['yscrollcommand'] = scrollbar.set
 
 gui.mainloop()
 ```
+[  File Missing] ?????????????
 
 # <li style='font-size:20pt'>LabelFrame In Tkinter</li>
 <p>Labelframe is a simple container widget. Its primary purpose is to act as a spacer or container for complex window layouts. It acts like a container that can be used to group the number of interrelated widgets such as Radiobuttons. This widget is a variant of the Frame widget which has all the features of a frame plus the ability to display a label.</p>
@@ -2456,7 +2457,6 @@ left.pack()
 gui.mainloop()
 ```
 
-# ![image.png](attachment:image.png)
 
 
 ```python
