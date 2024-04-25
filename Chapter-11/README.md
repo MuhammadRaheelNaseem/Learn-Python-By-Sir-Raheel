@@ -3182,3 +3182,259 @@ gui.mainloop()
 # ![image.png](attachment:image.png)
 
 -----------------
+
+
+# ____________Other Topic______________
+
+# Background Image Load
+
+```python
+from tkinter import *
+from PIL import Image, ImageTk
+
+# def set_background_image(window, image_path):
+
+# Create the main window
+root = Tk()
+root.title("Image Background Example")
+
+# Set the window size
+root.geometry("600x600")
+
+image = Image.open("img_600x600.jpg")
+photo = ImageTk.PhotoImage(image)
+label = Label(root, image=photo)
+label.image = photo
+label.place(x=0, y=0, relwidth=1, relheight=1)
+
+# Run the application
+root.mainloop()
+
+```
+
+
+```python
+import tkinter as tk
+from PIL import Image, ImageTk
+
+def set_background_image(window, image_path):
+    # Load the image
+    global photo
+    image = Image.open(image_path)
+    photo = ImageTk.PhotoImage(image)
+    
+    # Create a label and set the image as its background
+    label = tk.Label(window, image=photo)
+    label.image = photo  # Keep a reference to avoid garbage collection
+    label.place(x=0, y=0, relwidth=1, relheight=1)  # Stretch the label to cover the whole window
+
+# Create the main window
+root = tk.Tk()
+root.title("Image Background Example")
+
+# Set the window size
+root.geometry("400x300")
+
+# Set the background image
+set_background_image(root, "download.jpg")  # Change the image path accordingly
+
+# Run the application
+root.mainloop()
+
+```
+
+# Image on Button Example
+
+
+```python
+import tkinter as tk
+from PIL import Image, ImageTk
+
+root = tk.Tk()
+root.title("Image on Button Example")
+
+image = Image.open("cross.png")
+photo = ImageTk.PhotoImage(image)
+
+button = tk.Button(root)
+button.config(image=photo, width=300, height=300)
+button.image = photo
+button.pack()
+
+root.mainloop()
+
+```
+
+# Entry Widget with Image
+
+
+```python
+import tkinter as tk
+from PIL import Image, ImageTk
+
+def set_entry_with_image(root, image_path):
+    # Create a frame to hold the widgets
+    frame = tk.Frame(root)
+    frame.pack()
+
+    # Load the image
+    image = Image.open(image_path)
+    photo = ImageTk.PhotoImage(image)
+
+    # Create a label for the image
+    image_label = tk.Label(frame, image=photo)
+    image_label.image = photo
+    image_label.grid(row=0, column=0)
+
+    # Create an entry widget
+    entry = tk.Entry(frame, width=20)
+    entry.grid(row=0, column=1)
+
+# Create the main window
+root = tk.Tk()
+root.title("Entry Widget with Image Example")
+
+# Set the entry with image
+set_entry_with_image(root, "download.jpg")
+
+# Run the application
+root.mainloop()
+
+```
+
+# Multiple Images in List
+
+
+```python
+import tkinter as tk
+from PIL import Image, ImageTk
+
+def display_images(window, image_paths):
+    # Create a frame to hold the images
+    frame = tk.Frame(window)
+    frame.pack()
+
+    # Loop through the image paths and display each image
+    for i, image_path in enumerate(image_paths):
+        # Load the image
+        image = Image.open(image_path)
+        photo = ImageTk.PhotoImage(image)
+
+        # Create a label for the image
+        label = tk.Label(frame, image=photo)
+        label.image = photo
+        label.grid(row=0, column=i, padx=5, pady=5)
+
+# Create the main window
+root = tk.Tk()
+root.title("Multiple Images in List Example")
+
+# List of image paths
+image_paths = ["download.jpg","img_600x600.jpg","xyz.jpg"]  # Add more image paths as needed
+
+# Display the images
+display_images(root, image_paths)
+
+# Run the application
+root.mainloop()
+
+```
+
+# Image Tooltip - Hovering
+
+
+```python
+import tkinter as tk
+import tkinter.ttk as ttk
+from PIL import Image, ImageTk
+
+class HoverInfo:
+    def __init__(self, widget, image_path):
+        self.widget = widget
+        self.image_path = image_path
+        self.tipwindow = None
+        self.id = None
+        self.x = self.y = 0
+        
+    def show_image_tooltip(self, event):
+        self.x, self.y, _, _ = self.widget.bbox("insert")
+        self.x += self.widget.winfo_rootx() + 25
+        self.y += self.widget.winfo_rooty() + 25
+        
+        # Create a toplevel window
+        self.tipwindow = tk.Toplevel(self.widget)
+        self.tipwindow.overrideredirect(True)
+        
+        # Load and display the image
+        image = Image.open(self.image_path)
+        photo = ImageTk.PhotoImage(image)
+        label = tk.Label(self.tipwindow, image=photo)
+        label.image = photo
+        label.pack()
+        
+        self.tipwindow.wm_geometry("+%d+%d" % (self.x, self.y))
+
+    def hide_image_tooltip(self, event):
+        if self.tipwindow:
+            self.tipwindow.destroy()
+
+def main():
+    root = tk.Tk()
+    root.title("Image Tooltip Example")
+    
+    # Create a label widget
+    label = ttk.Label(root, text="Hover Me")
+    label.pack(padx=10, pady=10)
+    
+    # Initialize HoverInfo object with label widget and image path
+    hover_info = HoverInfo(label, "img_600x600.jpg")  # Change the image path accordingly
+    
+    # Bind events to show and hide image tooltip
+    label.bind("<Enter>", hover_info.show_image_tooltip)
+    label.bind("<Leave>", hover_info.hide_image_tooltip)
+    
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
+
+```
+
+# Image with opencv
+
+
+```python
+import cv2
+import tkinter as tk
+from PIL import Image, ImageTk
+
+def convert_image_for_tk(image):
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Convert from BGR to RGB color space
+    image = Image.fromarray(image)  # Convert to PIL Image
+    photo = ImageTk.PhotoImage(image)  # Convert to PhotoImage
+    return photo
+
+def display_image(image_path):
+    # Create main window
+    root = tk.Tk()
+    root.title("Image Display Example")
+    
+    # Load image using OpenCV
+    image = cv2.imread(image_path)
+    
+    # Convert image for Tkinter
+    photo = convert_image_for_tk(image)
+    
+    # Create label for image
+    label = tk.Label(root, image=photo)
+    label.photo = photo  # Keep a reference to avoid garbage collection
+    label.pack(padx=10, pady=10)
+
+    # Run the application
+    root.mainloop()
+
+# Path to the image
+image_path = "img_600x600.jpg"  # Replace with your image path
+display_image(image_path)
+
+```
