@@ -8,7 +8,7 @@
 * Three Parameter & Three Argument Function,
 * Four Parameter & Four Argument Function,
 * Multiple Parameter & Multiple Arguments,
-* **Args Functions,
+* *Args Functions,
 * **Kwargs Functions,
 * Local And Global Variable
 * Nested Functions,
@@ -401,8 +401,8 @@ fullname(lastname = 'Bhat' , middlename='Ali' , firstname='Asif')
     Asif Ali Bhat
     
 
-# <li style="font-size:20pt;">Multiple Parameter & Multiple Arguments Using "**args"</li>
-`**args`
+# <li style="font-size:20pt;">Multiple Parameter & Multiple Arguments Using "*args"</li>
+`*args`
 
 *args allows us to pass a variable number of non-keyword arguments to a Python function. In the function, we should use an asterisk (*) before the parameter name to specify how many arguments we want to pass to the function.
 
