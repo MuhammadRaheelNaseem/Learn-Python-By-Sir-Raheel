@@ -24,6 +24,7 @@
 * The Random Module And Import,
 * Flag In Python,
 * Use Of Flag In Python,
+* String Formating
 
 
 # <li style='font-family; times, serif; font-size:20pt;'>How To Take Input From User</li>
