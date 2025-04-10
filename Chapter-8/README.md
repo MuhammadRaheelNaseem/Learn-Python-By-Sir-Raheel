@@ -889,44 +889,97 @@ print(data)
     {'a': 1, 'x': nan}
     
 
-# <li style="font-size:20pt;">What Is Regex - Regular Expression?</li>
-Regular Expressions are used to match strings of text such as particular characters, words, or patterns of characters. RegEx can be used to check if a string contains the specified search pattern. It means that we can match and extract any string pattern from the text with the help of regular expressions.
+### **RegEx**
 
-# <li style="font-size:20pt;">Use Of Regex- Regular Expression.</li>
+---
 
-### `MetaCharacters`
-Metacharacters are characters that are interpreted in a special way by a RegEx engine. Here's a list of metacharacters:
+### **1. Introduction to Regular Expressions**
 
-[] . ^ $ * + ? {} () \ |
+**What is RegEx?**
+- A RegEx (Regular Expression) is a sequence of characters that forms a search pattern. It is used for searching and manipulating strings based on specific patterns.
+  
+- It’s primarily used for:
+  - Searching text for patterns.
+  - Replacing patterns.
+  - Splitting strings based on patterns.
+  - Validating input strings.
+
+
+#### **Metacharacters**
+Metacharacters are special characters that represent patterns in RegEx:
+
+| **Character** | **Description**                            | **Example**           |
+|---------------|--------------------------------------------|-----------------------|
+| `.`           | Matches any character except newline.      | `a.c` (matches `abc`, `acc`, etc.) |
+| `^`           | Anchors a match at the beginning of the string. | `^abc` (matches "abc" at the start of a string) |
+| `$`           | Anchors a match at the end of the string.  | `abc$` (matches "abc" at the end of the string) |
+| `*`           | Matches zero or more occurrences.         | `a*` (matches "", `a`, `aa`, `aaa`, etc.) |
+| `+`           | Matches one or more occurrences.          | `a+` (matches `a`, `aa`, `aaa`, etc.) |
+| `?`           | Matches zero or one occurrence.           | `a?` (matches "", `a`) |
+| `{n}`         | Matches exactly `n` occurrences.          | `a{3}` (matches `aaa`) |
+| `{n,}`        | Matches `n` or more occurrences.          | `a{2,}` (matches `aa`, `aaa`, `aaaa`, etc.) |
+| `{n,m}`       | Matches between `n` and `m` occurrences.  | `a{2,4}` (matches `aa`, `aaa`, `aaaa`) |
+| `|`           | Matches either of two patterns.            | `a|b` (matches `a` or `b`) |
+| `()`          | Groups a pattern.                          | `(abc)+` (matches `abc`, `abcabc`) |
+
+
+### **Special Sequences**
+
+Special sequences represent a set of characters that match specific conditions:
+
+| **Character** | **Description** | **Example** |
+|---------------|-----------------|-------------|
+| `\d`          | Matches any digit (0-9) | `\d{2,4}` (matches `12`, `1234`, etc.) |
+| `\D`          | Matches any non-digit | `\D+` (matches any non-digit string) |
+| `\s`          | Matches any whitespace character | `\s+` (matches spaces, tabs, newlines) |
+| `\S`          | Matches any non-whitespace character | `\S+` (matches non-whitespace characters) |
+| `\w`          | Matches any alphanumeric character | `\w+` (matches any word) |
+| `\W`          | Matches any non-alphanumeric character | `\W+` (matches non-alphanumeric characters) |
+| `\b`          | Matches a word boundary | `r"\bcat\b"` (matches "cat" at word boundaries) |
+| `\B`          | Matches a non-word boundary | `r"\Bcat\B"` (matches "cat" not at word boundaries) |
+
+
+### **Sets and Ranges**
+
+A set is a collection of characters enclosed within `[]`.
+
+| **Set Description**         | **Example**     |
+|-----------------------------|-----------------|
+| `[abc]`                     | Matches `a`, `b`, or `c` |
+| `[a-z]`                     | Matches any lowercase letter |
+| `[0-9]`                     | Matches any digit |
+| `[^abc]`                    | Matches any character except `a`, `b`, or `c` |
+| `[a-zA-Z]`                  | Matches any letter (lower or uppercase) |
+| `[+]`                       | Matches the literal `+` character |
+
+
+### **Flags in RegEx**
+
+Flags change the behavior of the RegEx pattern matching. Some common flags include:
+
+| **Flag**         | **Shorthand** | **Description**                           |
+|------------------|---------------|-------------------------------------------|
+| `re.ASCII`       | `re.A`        | Matches only ASCII characters             |
+| `re.DOTALL`      | `re.S`        | Makes `.` match all characters, including newline |
+| `re.IGNORECASE`  | `re.I`        | Case-insensitive matching                 |
+| `re.MULTILINE`   | `re.M`        | Matches the beginning and end of each line |
+| `re.VERBOSE`     | `re.X`        | Allows you to write more readable RegEx (with comments) |
+
 
 
 ```python
 import re
 
 txt = "The rain in Spain"
-x = re.search("^The.*Spain$", txt)
-print(x)
-```
+x = re.search("Spain$", txt)
 
-    <re.Match object; span=(0, 17), match='The rain in Spain'>
-    
-
-
-```python
-import re
-
-pattern = '^a...s$'
-test_string = 'abyss'
-result = re.match(pattern, test_string)
-
-if result:
-    print("Search successful.")
+if x:
+    print(True)
 else:
-    print("Search unsuccessful.")
-
+    print(False)
 ```
 
-    Search successful.
+    True
     
 
 
@@ -934,11 +987,546 @@ else:
 import re
 
 txt = "The rain in Spain"
-x = re.findall("ai", txt)
+x = re.search("\s", txt)
+
+print("The first white-space character is located in position:", x)
+```
+
+    The first white-space character is located in position: <re.Match object; span=(3, 4), match=' '>
+    
+
+
+```python
+import re
+
+s = 'GeeksforGeeks: A computer science portal for geeks'
+# print(len(s))
+
+match = re.search(r'geeks$', s)
+
+# print('Start Index:', match.start())
+print('End Index:', match)
+if match:
+    print(True)
+else:
+    print(False)
+```
+
+    End Index: <re.Match object; span=(45, 50), match='geeks'>
+    True
+    
+
+
+```python
+import re
+
+txt = "Today is Saturday"
+
+#Find all lower case characters alphabetically between "a" and "m":
+
+x = re.findall("[a-x]", txt)
+print(x)
+
+```
+
+    ['o', 'd', 'a', 'i', 's', 'a', 't', 'u', 'r', 'd', 'a']
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain l"
+
+#Find all lower case characters alphabetically between "a" and "m":
+
+x = re.findall("[n-z]", txt)
+print(x)
+
+```
+
+
+```python
+import re
+
+txt = "That will be 59 dollars"
+
+#Find all digit characters:
+x = re.findall("\d", txt)
+y = re.findall("\d+", txt)
+z = re.findall("\D", txt)
+
+print("output of \d: ",x)
+print("output of \d+: ",y)
+print("Output of \D: ",z)
+```
+
+    output of \d:  ['5', '9']
+    output of \d+:  ['59']
+    Output of \D:  ['T', 'h', 'a', 't', ' ', 'w', 'i', 'l', 'l', ' ', 'b', 'e', ' ', ' ', 'd', 'o', 'l', 'l', 'a', 'r', 's']
+    
+
+
+```python
+import re
+
+txt = "I am 15 years old and my brother is 13 years old"
+
+x = re.findall("\d+", txt)
 print(x)
 ```
 
-    ['ai', 'ai']
+    ['15', '13']
+    
+
+
+```python
+import re
+
+txt = "That will be 59 90 98 dollars"
+
+#Find all digit characters:
+
+x = re.findall("\d", txt)
+print(x)
+
+```
+
+
+```python
+import re
+
+txt = "hello planet help"
+
+#Search for a sequence that starts with "he", followed by two (any) characters, and an "o":
+
+x = re.findall(".l.n.t", txt)
+print(x)
+
+```
+
+    ['planet']
+    
+
+
+```python
+import re
+
+txt = "hello helps planet"
+
+#Check if the string starts with 'hello':
+
+x = re.findall("^he...", txt)
+print(x)
+if x:
+    print("Yes, the string starts with 'hello'")
+else:
+    print("No match")
+
+```
+
+
+```python
+import re
+
+txt = "hello planet"
+
+#Check if the string ends with 'planet':
+
+x = re.findall("planet$", txt)
+print(x)
+if x:
+    print("Yes, the string ends with 'planet'")
+else:
+    print("No match")
+
+```
+
+
+```python
+import re
+
+txt = "hello planet"
+
+#Search for a sequence that starts with "he", followed by 0 or more  (any) characters, and an "o":
+
+x = re.findall("he.*o", txt)
+
+print(x)
+
+```
+
+    ['hello']
+    
+
+
+```python
+import re
+
+txt = "hello planet"
+
+#Search for a sequence that starts with "he", followed by 0 or more  (any) characters, and an "o":
+
+x = re.findall("he.*o", txt)
+
+print(x)
+
+```
+
+
+```python
+import re
+
+txt = "heo"
+txt1 = 'hello'
+txt2 = 'helo'
+txt3 = 'he'
+
+#Search for a sequence that starts with "he", followed by 0 or 1  (any) character, and an "o":
+
+x = re.findall("he?o", txt)
+y = re.findall("he.?o", txt1)
+z = re.findall("he.?o", txt2)
+v = re.findall("he.?o", txt3)
+
+print(x)
+print(y)
+print(z)
+print(v)
+
+#This time we got no match, because there were not zero, not one, but two characters between "he" and the "o"
+
+```
+
+
+```python
+ILovePakistan 
+ILovePakistn ? wrong forgot
+```
+
+
+```python
+import re
+
+txt = "hello planet"
+var = "Introduction"
+print(len(var))
+
+#Search for a sequence that starts with "he", followed excactly 2 (any) characters, and an "o":
+
+# x = re.findall("he.{2}o", txt)
+x = re.findall("In.{9}n", var)
+# y = re.findall("pl...t", txt)
+
+
+print(x)
+# print(y)
+```
+
+    12
+    ['Introduction']
+    
+
+
+```python
+import re
+
+txt = "hello planet"
+
+#Search for a sequence that starts with "he", followed excactly 2 (any) characters, and an "o":
+
+x = re.findall("he.{2}o", txt)
+
+print(x)
+
+```
+
+
+```python
+import re
+
+txt = "ain in Spain"
+
+#Check if "ain" is present at the beginning of a WORD:
+
+x = re.findall(r"\bains", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    []
+    No match
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present at the beginning of a WORD:
+# (pick only starting characters)
+
+x = re.findall(r"\brains", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+
+```python
+import re
+
+txt = "The rain pain Spain bin"
+
+#Check if "ain" is present, but NOT at the beginning of a word
+# (pick only last characters / seperate characters)
+
+x = re.findall(r"\Bin", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['in', 'in', 'in', 'in']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present, but NOT at the end of a word:
+
+# x = re.findall(r"\Bain", txt)
+y = re.findall(r"a\B", txt)
+
+# print(x)
+print(y)
+
+if y:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['a', 'a']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain 78"
+
+#Check if the string contains any digits (numbers from 0-9):
+
+x = re.findall("\d+", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['78']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain 78 79 80"
+
+#Return a match at every no-digit character:
+
+x = re.findall("\D", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['T', 'h', 'e', ' ', 'r', 'a', 'i', 'n', ' ', 'i', 'n', ' ', 'S', 'p', 'a', 'i', 'n', ' ', ' ', ' ']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Return a match at every white-space character:
+
+x = re.findall("\s", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    [' ', ' ', ' ']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Return a match at every NON white-space character:
+
+x = re.findall("\S", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['T', 'h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', 'S', 'p', 'a', 'i', 'n']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The 59 _ $ @ # $ % & -"
+
+#Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
+# not to pick @ # $ % & -
+x = re.findall("\w", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    ['T', 'h', 'e', '5', '9', '_']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain 89 ? @ ! . $ @ # $ % & -"
+
+#Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+
+x = re.findall("\W", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is at least one match!")
+else:
+    print("No match")
+
+```
+
+    [' ', ' ', ' ', ' ', ' ', '?', ' ', '@', ' ', '!', ' ', '.', ' ', '$', ' ', '@', ' ', '#', ' ', '$', ' ', '%', ' ', '&', ' ', '-']
+    Yes, there is at least one match!
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string ends with "Spain":
+
+x = re.findall("ain\Z", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is a match!")
+else:
+    print("No match")
+
+```
+
+    ['ain']
+    Yes, there is a match!
+    
+
+    <>:7: SyntaxWarning: invalid escape sequence '\Z'
+    <>:7: SyntaxWarning: invalid escape sequence '\Z'
+    C:\Users\mrahe\AppData\Local\Temp\ipykernel_17796\1756666343.py:7: SyntaxWarning: invalid escape sequence '\Z'
+      x = re.findall("ain\Z", txt)
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string starts with "The":
+
+x = re.findall("\AThe", txt)
+
+print(x)
+
+if x:
+    print("Yes, there is a match!")
+else:
+    print("No match")
+
+```
+
+    ['The']
+    Yes, there is a match!
+    
+
+    <>:7: SyntaxWarning: invalid escape sequence '\A'
+    <>:7: SyntaxWarning: invalid escape sequence '\A'
+    C:\Users\mrahe\AppData\Local\Temp\ipykernel_17796\1027700818.py:7: SyntaxWarning: invalid escape sequence '\A'
+      x = re.findall("\AThe", txt)
     
 
 
@@ -957,30 +1545,364 @@ regex = '\d+'
 match = re.findall(regex, string)
 print(match)
 
-
-
 ```
 
     ['123456789', '987654321']
+    
+
+    <>:10: SyntaxWarning: invalid escape sequence '\d'
+    <>:10: SyntaxWarning: invalid escape sequence '\d'
+    C:\Users\mrahe\AppData\Local\Temp\ipykernel_17796\1767463906.py:10: SyntaxWarning: invalid escape sequence '\d'
+      regex = '\d+'
     
 
 
 ```python
 import re
 
-# \d is equivalent to [0-9].
-p = re.compile('\d')
-print(p.findall("I went to him at 11 A.M. on 4th July 1886"))
+test_string = 'abyss'
+pattern = '^a...s'
 
-# \d+ will match a group on [0-9], group
-# of one or greater size
-p = re.compile('\d+')
-print(p.findall("I went to him at 11 A.M. on 4th July 1886"))
+result = re.match(pattern, test_string)
+print(result)
+
+if result:
+    print("Search successful.")
+else:
+    print("Search unsuccessful.")
 
 ```
 
-    ['1', '1', '4', '1', '8', '8', '6']
-    ['11', '4', '1886']
+    <re.Match object; span=(0, 5), match='abyss'>
+    Search successful.
+    
+
+
+```python
+import re
+
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+print(x)
+
+if x:
+    print("Match")
+else:
+    print("Not Match")
+```
+
+    <re.Match object; span=(0, 17), match='The rain in Spain'>
+    Match
+    
+
+
+```python
+# import re module
+import re
+
+Substring ='ALI'
+
+
+String1 ='''We are learning regex with abc institute 
+		regex is very useful for string matching.
+		It is fast too. ALI'''
+String2 ='''string We are learning regex with abc institute 
+		regex is very useful for string matching.
+		It is fast too. alI'''
+
+# Use of re.search() Method
+# x = re.search(Substring, String2, re.IGNORECASE) # found from anywhere else
+x = re.match('$alI', String1) # found from starting 
+if x:
+    print('Founded.....')
+else:
+    print("Not Founded.....")
+# Use of re.match() Method
+# print(re.match(Substring, String1))
+
+# # Use of re.search() Method
+# print(re.search(Substring, String2))
+# # Use of re.match() Method
+# print(re.match(Substring, String2))
+
+```
+
+    Not Founded.....
+    
+
+
+```python
+import re
+
+Substring = 'ALI'
+
+String1 = '''We are learning regex with abc institute 
+        regex is very useful for string matching.
+        It is fast too. ALI'''
+String2 = '''ALI We are learning regex with abc institute 
+        regex is very useful for string matching.
+        It is fast too. alI'''
+
+# Match 'ALI' at the start of the string (case-insensitive)
+start_match = re.match(r'^' + Substring, String2, re.IGNORECASE)
+if start_match:
+    print("Found at the start of the string.")
+else:
+    print("Not Found at the start of the string.")
+
+# Match 'ALI' at the end of the string (case-insensitive)
+end_match = re.search(r'ALI$', String1, re.IGNORECASE)
+if end_match:
+    print("Found at the end of the string.")
+else:
+    print("Not Found at the end of the string.")
+
+# Match any occurrence of 'ALI' ignoring case
+any_match = re.search(r'ALI', String1, re.IGNORECASE)
+if any_match:
+    print("Found anywhere in the string.")
+else:
+    print("Not Found anywhere in the string.")
+
+```
+
+    Found at the start of the string.
+    Found at the end of the string.
+    Found anywhere in the string.
+    
+
+
+```python
+import re
+
+# Keyword to search for
+keyword = 'ALI'
+
+# Sample user comments (real-world scenario)
+comments = [
+    "I had a great experience with ALI's service!",
+    "The product quality is excellent. alI would recommend it to everyone.",
+    "Not satisfied with the service provided by Ali.",
+    "I think ALI could improve their customer support.",
+    "This is a random comment without the keyword."
+]
+
+# Function to search for the keyword in comments
+def search_keyword_in_comments(keyword, comments):
+    for index, comment in enumerate(comments):
+        # Match 'keyword' at the start of the comment (case-insensitive)
+        start_match = re.match(r'^' + re.escape(keyword), comment, re.IGNORECASE)
+        if start_match:
+            print(f"Comment {index + 1}: Found at the start of the comment.")
+
+        # Match 'keyword' at the end of the comment (case-insensitive)
+        end_match = re.search(re.escape(keyword) + r'$', comment, re.IGNORECASE)
+        if end_match:
+            print(f"Comment {index + 1}: Found at the end of the comment.")
+
+        # Match any occurrence of 'keyword' ignoring case
+        any_match = re.search(re.escape(keyword), comment, re.IGNORECASE)
+        if any_match:
+            print(f"Comment {index + 1}: Found anywhere in the comment.")
+
+# Execute the search
+search_keyword_in_comments(keyword, comments)
+```
+
+    Comment 1: Found anywhere in the comment.
+    Comment 2: Found anywhere in the comment.
+    Comment 3: Found anywhere in the comment.
+    Comment 4: Found anywhere in the comment.
+    
+
+
+```python
+# Email Validation System
+import re
+
+def validate_email(email):
+    # RegEx pattern for a valid email
+    pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+    
+    # Search for a match
+    if re.match(pattern, email):
+        return "Valid Email"
+    else:
+        return "Invalid Email"
+
+# Test the function
+email = "test@example.com"
+print(validate_email(email))
+
+email = "invalid-email"
+print(validate_email(email))
+
+```
+
+    Valid Email
+    Invalid Email
+    
+
+
+```python
+# Phone Number Validator
+import re
+
+def validate_phone_number(phone):
+    # RegEx pattern for phone number format XXX-XXX-XXXX
+    pattern = r"^\d{3}-\d{3}-\d{4}$"
+    
+    if re.match(pattern, phone):
+        return "Valid Phone Number"
+    else:
+        return "Invalid Phone Number"
+
+# Test the function
+phone = "123-456-7890"
+print(validate_phone_number(phone))
+
+phone = "12345-67890"
+print(validate_phone_number(phone)) 
+
+```
+
+    Valid Phone Number
+    Invalid Phone Number
+    
+
+
+```python
+# URL Extractor
+import re
+
+def extract_urls(text):
+    # RegEx pattern to match both HTTP and HTTPS URLs
+    pattern = r"https?://[a-zA-Z0-9.-]+(?:\.[a-zA-Z]{2,})+"
+    
+    urls = re.findall(pattern, text)
+    return urls
+
+# Test the function
+text = "Visit us at https://www.example.com or check out our old site at http://oldsite.org"
+urls = extract_urls(text)
+print("URLs found:", urls) 
+
+```
+
+    URLs found: ['https://www.example.com', 'http://oldsite.org']
+    
+
+
+```python
+# Date Extractor
+
+import re
+
+def extract_dates(text):
+    # RegEx pattern to match dates in dd-mm-yyyy format
+    pattern = r"\b\d{2}-\d{2}-\d{4}\b"
+    
+    dates = re.findall(pattern, text)
+    return dates
+
+# Test the function
+text = "The event is on 12-05-2023 and the next event is on 15-06-2023."
+dates = extract_dates(text)
+print("Dates found:", dates)
+
+```
+
+    Dates found: ['12-05-2023', '15-06-2023']
+    
+
+
+```python
+# Password Strength Checker
+
+import re
+
+def check_password_strength(password):
+    # RegEx patterns to check different requirements
+    if len(password) < 8:
+        return "Password too short. Must be at least 8 characters."
+    
+    if not re.search(r"[A-Z]", password):
+        return "Password must contain at least one uppercase letter."
+    
+    if not re.search(r"[a-z]", password):
+        return "Password must contain at least one lowercase letter."
+    
+    if not re.search(r"[0-9]", password):
+        return "Password must contain at least one digit."
+    
+    return "Password is strong."
+
+# Test the function
+password = "Password123"
+print(check_password_strength(password)) 
+
+password = "pass123"
+print(check_password_strength(password)) 
+
+```
+
+    Password is strong.
+    Password too short. Must be at least 8 characters.
+    
+
+
+```python
+ # Log File Analyzer
+import re
+
+def extract_errors(log_text):
+    # RegEx pattern to match 'ERROR' and 'WARNING' messages in log
+    pattern = r"(ERROR|WARNING):\s.+"
+    
+    errors = re.findall(pattern, log_text)
+    return errors
+
+# Test the function
+log_text = """INFO: System boot successful.
+ERROR: File not found.
+WARNING: Low disk space.
+ERROR: Network timeout."""
+errors = extract_errors(log_text)
+print("Errors and Warnings:", errors)
+
+```
+
+    Errors and Warnings: ['ERROR', 'WARNING', 'ERROR']
+    
+
+
+```python
+# Phone Number Formatting
+import re
+
+def format_phone_number(phone):
+    # Remove all non-digit characters
+    clean_phone = re.sub(r"\D", "", phone)
+    
+    # Format to XXX-XXX-XXXX
+    formatted_phone = f"{clean_phone[:3]}-{clean_phone[3:6]}-{clean_phone[6:]}"
+    
+    return formatted_phone
+
+# Test the function
+phone = "123.456.7890"
+formatted = format_phone_number(phone)
+print("Formatted Phone:", formatted)  # Output: 123-456-7890
+
+phone = "(123) 456-7890"
+formatted = format_phone_number(phone)
+print("Formatted Phone:", formatted)  # Output: 123-456-7890
+
+```
+
+    Formatted Phone: 123-456-7890
+    Formatted Phone: 123-456-7890
+    
     
 
 # <li style="font-size:20pt;">Python Try/Except</li>
